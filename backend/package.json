@@ -1,0 +1,11 @@
+{
+  "name": "barebutes-back",
+  "version": "0.1.0",
+  "description": "Backend of the BareButes collaboration platform",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iftikhar Khan, Lily Caplan, Daniel Segarra",
+  "license": "ISC"
+}
