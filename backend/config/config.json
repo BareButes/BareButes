@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "danielsegarra",
-    "password": "Ds1622s",
-    "database": "MYAPPNAME_development",
+    "username": "barebutes",
+    "password": "barebutes",
+    "database": "BareButes_DEV",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },

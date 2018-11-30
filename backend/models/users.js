@@ -46,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     //the dynamic array linking to contribution table
     contributions: {
       type: DataTypes.ARRAY(DataTypes.INTEGER.UNSIGNED),
-      allowNull: false, //may start with no contribs
+      allowNull: true, //may start with no contribs
       validate: {
         isArray: true,
       },
