@@ -13,6 +13,6 @@ module.exports = (sequelize, DataTypes) => {
   //Discussion has one translation table
   Discussion.hasOne(Translation, {as: 'Pseudonym', foreignKey: 'transTableId'});
   
-  return Discussions;
+  return Discussion;
 }
 
