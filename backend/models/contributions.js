@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     date_and_time: {
-      type: DataTypes.Date,
+      type: DataTypes.DATE,
     },
     reviewers: {
       type: DataTypes.STRING,
