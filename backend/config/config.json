@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "ctp_user",
-    "password": "ctp_user",
-    "database": "backend-starter",
+    "username": "barebutes",
+    "password": "barebutes",
+    "database": "BareButes_DEV",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "DB_USERNAME",
-    "password": "DB_PASSWORD",
-    "database": "APP_test",
+    "username": "danielsegarra",
+    "password": "Ds1622s",
+    "database": "MYAPPNAME_development",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "production": {
-    "username": "DB_USERNAME",
-    "password": "DB_PASSWORD",
-    "database": "APP_production",
+    "username": "danielsegarra",
+    "password": "Ds1622s",
+    "database": "MYAPPNAME_development",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   }

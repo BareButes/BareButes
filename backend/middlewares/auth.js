@@ -8,6 +8,7 @@ function passwordsMatch(passwordSubmitted, storedPassword) {
   return bcrypt.compareSync(passwordSubmitted, storedPassword);
 }
 
+// Using passport to authenticate user credentials
 passport.use(new LocalStrategy({
     usernameField: 'email',
   },

@@ -1,7 +1,8 @@
 const express = require('express');
 const models = require('../models');
-
+const passport = require('passport');
 const router = express.Router();
+
 
 
 router.get('/', (req, res) => {
@@ -14,6 +15,27 @@ router.post('/', (req, res) => {
   res.json({
     msg: "Successful POST to '/' route"
   });
+});
+
+
+router.post('/login', (req, res) => {
+  passport.authenticate('local', {
+    successRedirect: '/profile',
+    failureRedirect: '/login',
+  })(req, res);
+})
+
+router.get('/logout',
+ (req, res) => {
+   req.logout();
+   res.redirect('/');
+});
+
+router.post('/protected',
+passport.redirectIfNotLoggedIn('/login'),
+  (req, res) => {
+    req.user
+    res.send('secrets');
 });
 
 router.put('/:id', (req, res) => {
