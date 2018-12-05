@@ -5,6 +5,19 @@ const router = express.Router();
 
 
 
+router.get('/', (req, res) => {
+  res.json({
+    msg: "Successful GET to '/' route"
+  });
+});
+
+router.post('/', (req, res) => {
+  res.json({
+    msg: "Successful POST to '/' route"
+  });
+});
+
+
 router.post('/login', (req, res) => {
   passport.authenticate('local', {
     successRedirect: '/profile',
