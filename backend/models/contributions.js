@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     data: {
-      type: DataTypes.STRING,
+      type: DataTypes.BLOB,
       allowNull: false,
       unique: false,
       validate: {
