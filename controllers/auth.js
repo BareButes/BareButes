@@ -9,7 +9,6 @@ router.get('/error', (req, res) => {
   res.sendStatus(401);
 })
 
-
 router.post('/signup', (req,res) => {
   User.create({
     firstName: req.body.firstName,
@@ -19,7 +18,8 @@ router.post('/signup', (req,res) => {
     password_hash: req.body.password,
   }).then((user) => {
     res.json({ msg: "user created" });
-  }).catch(() => {
+  }).catch((error) => {
+    console.log(error);
     res.status(400).json({ msg: "error creating user" });
   });
 });
@@ -38,8 +38,8 @@ router.post('/login',
 
 
 router.get('/logout', (req, res) => {
-  req.logout();
-  res.sendStatus(200); // ok status
+  req.logout(); // passport created a nice logout function for us!
+  res.sendStatus(200);
 });
 
 
